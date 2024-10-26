@@ -9,15 +9,14 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-for_window [class="^.*"] border pixel 1
-
 set $mod Mod4
 # set $mod Mod1
 
-exec --no-startup-id picom
-exec_always --no-startup-id feh --bg-scale ~/Soft/wallpaper/wall.jpg
+#exec_always --no-startup-id feh --bg-scale ~/Soft/wallpaper/wall.jpg
+exec_always --no-startup-id nitrogen --set-scaled ~/.config/backgrounds/wall.jpg
+
+exec_always --no-startup-id picom
 #exec --no-startup-id xrdb -merge ~/.Xresources
-exec_always --no-startup-id setxkbmap -option ctrl:nocaps
 
 # kill any hanging polybar processes
 exec_always killall polybar
@@ -188,6 +187,7 @@ bindsym $mod+r mode "resize"
 #THEME#
 #######
 
+
 # set primary gruvbox colorscheme colors
 set $bg #282828
 set $red #cc241d
@@ -199,23 +199,30 @@ set $aqua #689d68
 set $gray #a89984
 set $darkgray #1d2021
 
-# font used by i3 for titles and bars
-font pango:Hack 12 
-
-#start of window title bars & borders section
 
 # green gruvbox
 # class                 border|backgr|text|indicator|child_border
-#client.focused          $green $green $darkgray $purple $darkgray
-#client.focused_inactive $darkgray $darkgray $yellow $purple $darkgray
-#client.unfocused        $darkgray $darkgray $yellow $purple $darkgray
-#client.urgent           $red $red $white $red $red
-
-# blue gruvbox
-# class                 border|backgr|text|indicator|child_border
-client.focused          $blue $blue $darkgray $purple $darkgray
+client.focused          $green $green $darkgray $purple $darkgray
 client.focused_inactive $darkgray $darkgray $yellow $purple $darkgray
 client.unfocused        $darkgray $darkgray $yellow $purple $darkgray
 client.urgent           $red $red $white $red $red
 
-#end of window title bars & borders section
+# blue gruvbox
+# class                 border|backgr|text|indicator|child_border
+#client.focused          $blue $blue $darkgray $purple $darkgray
+#client.focused_inactive $darkgray $darkgray $yellow $purple $darkgray
+#client.unfocused        $darkgray $darkgray $yellow $purple $darkgray
+#client.urgent           $red $red $white $red $red
+
+
+
+#settings des windows et du focus 
+
+
+for_window [class="st"] border pixel 2
+for_window [class="firefox"] border pixel 2
+for_window [class="emacs"] border pixel 2
+new_window pixel 2
+
+# font used by i3 for titles and bars
+font pango:Hack 12 
