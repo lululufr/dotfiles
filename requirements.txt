@@ -1,0 +1,15 @@
+i3
+picom
+feh
+nitrogen
+nvim
+polybar
+rofi
+warp-terminal
+alacritty
+zsh
+dmenu
+stow
+dunst
+wezterm
+
