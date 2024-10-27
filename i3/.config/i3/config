@@ -60,7 +60,7 @@ bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec warp-terminal
+bindsym $mod+Return exec alacritty
 bindsym $mod+o exec firefox
 
 # kill focused window
@@ -224,4 +224,4 @@ for_window [class=".*"] border pixel 2
 hide_edge_borders none
 
 # font used by i3 for titles and bars
-font pango:Hack 12 
+font pango:Hack 10 
