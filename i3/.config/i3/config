@@ -26,6 +26,9 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec_always --no-startup-id xrandr --output DP-0 --rotate right --left-of DP-2
 
 
+# dunst notification daemon
+exec_always --no-startup-id dunst
+
 ## Clipboard Screenshots
 bindsym $mod+Shift+s exec maim --select | xclip -selection clipboard -t image/png
 
@@ -64,8 +67,8 @@ bindsym $mod+o exec firefox
 bindsym $mod+Shift+q kill
 
 # start rofi (a program launcher)
-bindsym $mod+d exec --no-startup-id rofi -show drun
-bindsym $mod+space exec --no-startup-id rofi -show combi
+bindsym $mod+space exec --no-startup-id rofi -show drun
+bindsym $mod+d exec --no-startup-id rofi -show combi
 bindsym $mod+Tab exec --no-startup-id rofi -show window
 
 # change focus
@@ -217,8 +220,8 @@ client.urgent           $red $red $white $red $red
 
 
 #settings des windows et du focus 
-
-
+for_window [class=".*"] border pixel 2
+hide_edge_borders none
 
 # font used by i3 for titles and bars
 font pango:Hack 12 

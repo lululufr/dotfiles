@@ -33,6 +33,10 @@
     background-color:            @background;
     foreground:                  @gruvbox-dark-fg1;
     border-color:                @gruvbox-dark-gray;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    spacing: 0;
     separatorcolor:              @border-color;
     scrollbar-handle:            @border-color;
 
@@ -57,6 +61,11 @@
     selected-urgent-background:  @gruvbox-dark-red-light;
     selected-urgent-foreground:  @urgent-foreground;
 }
+
+element {
+  padding: 12;
+}
+
 
 @import "gruvbox-common.rasi"
 
