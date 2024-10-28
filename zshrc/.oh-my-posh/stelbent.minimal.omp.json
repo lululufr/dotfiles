@@ -7,7 +7,7 @@
         {
           "foreground": "#458588",
           "style": "plain",
-          "template": "$",
+          "template": "{{ .Name }}",
           "type": "shell"
         },
         {
@@ -121,20 +121,7 @@
     "blocks": [
       {
         "alignment": "left",
-        "segments": [
-          {
-            "foreground": "#757575",
-            "style": "plain",
-            "template": "\u2514 ",
-            "type": "text"
-          },
-          {
-            "foreground": "#ffffff",
-            "style": "plain",
-            "template": "$",
-            "type": "text"
-          }
-        ],
+        "segments": [],
         "type": "prompt"
       }
     ]
