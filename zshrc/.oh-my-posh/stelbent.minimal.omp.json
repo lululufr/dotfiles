@@ -118,13 +118,9 @@
     }
   ],
   "transient_prompt": {
-    "blocks": [
-      {
-        "alignment": "left",
-        "segments": [],
-        "type": "prompt"
-      }
-    ]
+    "background": "transparent",
+    "foreground": "#ffffff",
+    "template": "$ > "
   },
   "final_space": true,
   "version": 2
