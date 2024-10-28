@@ -71,9 +71,9 @@ bindsym $mod+space exec --no-startup-id rofi -show drun
 bindsym $mod+d exec --no-startup-id rofi -show combi
 bindsym $mod+Tab exec --no-startup-id rofi -show window
 # emojis
-bindsym $mod+j exec --no-startup-id rofi -show emoji -modi emoji
+bindsym $mod+Shift+x exec --no-startup-id rofi -show emoji -modi emoji
 # wifi
-bindsym $mod+k exec --no-startup-id ~/.config/rofi/rofi-wifi-menu.sh
+bindsym $mod+Shift+w exec --no-startup-id ~/.config/rofi/rofi-wifi-menu.sh
 
 
 # change focus
