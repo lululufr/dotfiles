@@ -71,4 +71,4 @@ alias obsi='nvim ~/Documents/TNT'
 # Shell integrations
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
-eval "$(oh-my-posh init zsh --config ~/dotfiles/oh-my-posh/gruvbox.omp.json)"
+eval "$(oh-my-posh init zsh --config ~/dotfiles/zshrc/.oh-my-posh/gruvbox.omp.json)"
