@@ -13,3 +13,4 @@ stow
 dunst
 wezterm
 zoxide
+oh-my-posh
