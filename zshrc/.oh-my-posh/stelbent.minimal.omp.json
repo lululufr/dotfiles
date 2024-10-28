@@ -87,7 +87,7 @@
           "type": "terraform"
         },
         {
-          "background": "#fb4d4d",
+          "background": "#ee2929",
           "foreground": "#ffffff",
           "powerline_symbol": "\ue0b0",
           "style": "powerline",
