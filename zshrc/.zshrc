@@ -73,3 +73,6 @@ eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 #eval "$(oh-my-posh init zsh --config ~/dotfiles/zshrc/.oh-my-posh/gruvbox.omp.json)"
 eval "$(oh-my-posh init zsh --config ~/dotfiles/zshrc/.oh-my-posh/stelbent.minimal.omp.json)"
+
+# Created by `pipx` on 2024-10-28 12:32:22
+export PATH="$PATH:/home/lucas/.local/bin"
