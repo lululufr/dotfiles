@@ -21,7 +21,7 @@ exec_always --no-startup-id picom
 
 #auto layout 
 
-exec_always --no-startup-id i3-autolayout autolayout
+#exec_always --no-startup-id i3-autolayout autolayout
 
 # kill any hanging polybar processes
 exec_always killall polybar
@@ -236,7 +236,7 @@ set $focused_border $green
 
 # class                 border  backgr. text    indicator child_border
 client.focused          #ffffff #ffffff #ffffff #ffffff   $focused_border
-client.focused_inactive #ffffff #ffffff #ffffff #ffffff   $focused_border
+client.focused_inactive #ffffff #ffffff #ffffff #ffffff   $unfocused_border
 client.unfocused        #ffffff #ffffff #ffffff #ffffff   $unfocused_border
 client.urgent           #ffffff #ffffff #ffffff #ffffff   $focused_border
 client.placeholder      #ffffff #ffffff #ffffff #ffffff   #ffffff
