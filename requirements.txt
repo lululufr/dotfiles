@@ -14,3 +14,4 @@ dunst
 wezterm
 zoxide
 oh-my-posh
+i3-autolayout
