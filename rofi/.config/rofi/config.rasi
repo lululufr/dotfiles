@@ -9,14 +9,14 @@ configuration{
     hide-scrollbar: true;
     sidebar-mode: true;
 
-    display-ssh:    "";
-    display-run:    "";
-    display-drun:   "";
-    display-window: "";
-    display-combi:  "";
+    display-ssh:    " ";
+    display-run:    " ";
+    display-drun:   " ";
+    display-window: " ";
+    display-combi:  " ";
     show-icons:     true;
 
 }
 
-@theme "~/.config/rofi/gruvbox-material.rasi"
+@theme "~/.config/rofi/nord.rasi"
 
