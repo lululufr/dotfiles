@@ -68,6 +68,8 @@ alias c='clear'
 
 alias obsi='nvim ~/Documents/TNT'
 
+alias bastion="tsh login --proxy=bastion.lululu.fr --auth=local"
+
 # Shell integrations
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
