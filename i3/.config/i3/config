@@ -66,7 +66,7 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec alacritty
-bindsym $mod+o exec firefox
+bindsym $mod+o exec google-chrome-stable
 
 # kill focused window
 bindsym $mod+Shift+q kill

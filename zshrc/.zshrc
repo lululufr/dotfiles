@@ -68,6 +68,8 @@ alias c='clear'
 
 alias obsi='nvim ~/Documents/TNT'
 
+BROWSER=google-chrome-stable
+
 # Shell integrations
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
