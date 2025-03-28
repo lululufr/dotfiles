@@ -69,7 +69,7 @@ alias c='clear'
 
 alias obsi='nvim ~/Documents/TNT'
 
-BROWSER=google-chrome-stable
+BROWSER=/usr/bin/google-chrome-stable
 
 # Shell integrations
 eval "$(fzf --zsh)"
