@@ -9,6 +9,6 @@ case "$CHOSEN" in
 "🟠 Reboot") reboot ;;
 "🔴 Shutdown") poweroff ;;
 "🖥️ Duplicate Screen") xrandr --output HDMI-A-0 --mode 1920x1080 --same-as eDP ;;
-
+"🖥️ Extend Screen") xrandr --output HDMI-A-0 --auto --right-of eDP ;;
 *) exit 1 ;;
 esac
