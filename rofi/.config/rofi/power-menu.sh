@@ -2,7 +2,7 @@
 
 # Power menu script using tofi
 
-CHOSEN=$(printf "🔐 Lock\n🟠 Reboot\n🔴 Shutdown\n🖥️ Duplicate Screen\n" | rofi -dmenu)
+CHOSEN=$(printf "🔐 Lock\n🟠 Reboot\n🔴 Shutdown\n🖥️ Duplicate Screen\n🖥️ Extend Screen\n" | rofi -dmenu)
 
 case "$CHOSEN" in
 "🔐 Lock") i3lock ;;
