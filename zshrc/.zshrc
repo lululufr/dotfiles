@@ -63,8 +63,7 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 # Aliases
 alias ls='ls --color'
-alias vim='lvim'
-alias nvim='lvim'
+alias vim='nvim'
 alias c='clear'
 
 alias obsi='nvim ~/Documents/TNT'
