@@ -1,0 +1,21 @@
+configuration{
+    modi: "run,window,combi";
+    icon-theme: "Papirus";
+    font: "JetBrainsMono Nerd Font Medium 12";
+    terminal: "alacritty";
+    drun-display-format: "{icon} {name}";
+    location: 0;
+    disable-history: false;
+    hide-scrollbar: true;
+    sidebar-mode: true;
+
+    display-ssh:    "";
+    display-run:    "";
+    display-drun:   "";
+    display-window: "";
+    display-combi:  "";
+    show-icons:     true;
+
+}
+
+@import "/usr/share/rofi/themes/solarized_alternate.rasi"

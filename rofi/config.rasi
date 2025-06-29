@@ -18,5 +18,4 @@ configuration{
 
 }
 
-@theme "~/.config/rofi/tokyo.rasi"
-
+@import "/usr/share/rofi/themes/solarized_alternate.rasi"
