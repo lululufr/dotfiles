@@ -237,11 +237,11 @@ warn-percentage = 95
 
 [module/wired-network]
 type = internal/network
-interface = eth1
+interface = eno1
 
 [module/wireless-network]
 type = internal/network
-interface = wlan1
+interface = wlan0
 
 [settings]
 throttle-output = 5
