@@ -63,8 +63,8 @@ font-3 = FontAwesome5Free:style=Solid:pixelsize=10;3
 font-4 = FontAwesome5Brands:style=Solid:pixelsize=10;3
 
 
-modules-left = i3 sp2 info-hackspeed sp2
-modules-right = weather sp1 linux-ver sp1 updates sp2 date sp2
+modules-left = i3 sp2 volume sp2 wired-network sp2 wireless-network
+modules-right = battery sp1 memory sp1 cpu sp1 updates sp2 date sp2
 
 tray-position = right
 tray-padding = 0
@@ -145,16 +145,6 @@ type = custom/script
 exec = ~/.config/polybar/scripts/info-hackspeed.sh
 tail = true
 
-[module/weather]
-type = custom/script
-exec = ~/.config/polybar/scripts/weather-openmap.sh
-interval = 600
-
-[module/linux-ver]
-type = custom/script
-exec = uname -r
-interval = 600
-
 [module/updates]
 type = custom/script
 exec = ~/.config/polybar/scripts/arch_updates.sh
@@ -226,6 +216,32 @@ bar-volume-empty = -
 bar-volume-empty-font = 1
 bar-volume-empty-foreground = ${colors.foreground-alt}
 bar-volume-empty-background = ${colors.background-alt}
+
+[module/battery]
+type = internal/battery
+full-at = 99
+low-at = 10
+battery = BAT0
+adapter = ADP1
+poll-interval = 5
+
+[module/cpu]
+type = internal/cpu
+interval = 0.5
+warn-percentage = 95
+
+[module/memory]
+type = internal/memory
+interval = 3
+warn-percentage = 95
+
+[module/wired-network]
+type = internal/network
+interface = eth1
+
+[module/wireless-network]
+type = internal/network
+interface = wlan1
 
 [settings]
 throttle-output = 5
