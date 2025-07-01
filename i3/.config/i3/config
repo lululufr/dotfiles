@@ -24,15 +24,6 @@ bindsym $mod+Shift+s exec maim --select | xclip -selection clipboard -t image/pn
 bindsym $mod+o exec zen-browser
 
 ### start rofi (a program launcher)
-bindsym $mod+space exec --no-startup-id rofi -show drun
-bindsym $mod+d exec --no-startup-id rofi -show combi
-bindsym $mod+Tab exec --no-startup-id rofi -show window
-# emojis
-bindsym $mod+Shift+x exec --no-startup-id rofi -show emoji -modi emoji
-# wifi
-bindsym $mod+Shift+w exec --no-startup-id ~/.config/rofi/rofi-wifi-menu.sh
-# Power menu 
-bindsym $mod+Shift+a exec --no-startup-id ~/.config/rofi/power-menu.sh
 # increase size keybinding for rofi
 bindsym $mod+Ctrl+Shift+Up resize grow height 10 px or 10 ppt
 bindsym $mod+Ctrl+Shift+Left resize shrink width 10 px or 10 ppt
@@ -135,7 +126,19 @@ bindsym $mod+r mode "resize"
 #
 # Status Bar:
 #
-exec_always --no-startup-id ~/.config/polybar/launch.sh --hack
+exec_always --no-startup-id ~/.config/polybar/launch.sh --forest
+
+bindsym $mod+space exec --no-startup-id ~/.config/polybar/forest/scripts/launcher.sh
+
+bindsym $mod+d exec --no-startup-id rofi -show combi
+bindsym $mod+Tab exec --no-startup-id rofi -show window
+# wifi
+bindsym $mod+Shift+w exec --no-startup-id ~/.config/rofi/rofi-wifi-menu.sh
+# Power menu 
+bindsym $mod+Shift+a exec --no-startup-id ~/.config/polybar/forest/scripts/powermenu.sh
+
+
+
 
 # class                 border  backgr. text    indicator child_border
 client.focused          #000000 #000000 #ffffff #000000   #000000
