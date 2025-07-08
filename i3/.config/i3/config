@@ -14,6 +14,11 @@ bindsym $mod+Shift+q kill
 bindsym ctrl+space exec "rofi -show combi -modi window,run,combi -combi-modi window,run"
 #bindsym ctrl+space exec dmenu_run
 
+#luminosité 
+bindsym XF86MonBrightnessUp   exec --no-startup-id brightnessctl set +10%
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 10%-
+
+
 #autolayout
 exec_always --no-startup-id i3-autolayout autolayout
 
