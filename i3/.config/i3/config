@@ -19,11 +19,11 @@ bindsym XF86MonBrightnessUp   exec --no-startup-id brightnessctl set +10%
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 10%-
 
 
-#autolayout
-exec_always --no-startup-id i3-autolayout autolayout
-
 #ecran gauche
 exec_always --no-startup-id xrandr --output DP-0 --rotate right --left-of DP-2
+
+
+
 
 ## Clipboard Screenshots
 bindsym $mod+Shift+s exec maim --select | xclip -selection clipboard -t image/png
@@ -182,7 +182,6 @@ for_window [class="firefox"] border none
 for_window [class="mpv"] floating enable
 for_window [class="imv"] floating enable
 for_window [class="zenity"] floating enable
-for_window [class="cachyos-welcome"] floating enable
 
 
 ########################################################################
@@ -222,13 +221,17 @@ bindsym $mod+l exec "sleep 0.1 && i3lock --blur 5"
 
 #exec_always setxkbmap -option grp:caps_toggle "us,ru" -option "grp:caps_toggle,grp_led:caps"
 
-exec xrandr --output HDMI-1 --mode 1920x1080 --rate 60 --scale 1x1
+#exec_always --no-startup-id xrandr \
+#  --output DP-4 --scale 1x1 --primary \
+#  --output DP-3 --rotate right \
+#  --left-of DP-4
+
 #exec xrandr --auto --output HDMI-1 --mode 1920x1080 --above HDMI-2
 
-exec feh --bg-fill ~/.config/i3/wallpaper.png
+exec_always --no-startup-id feh --bg-fill ~/.config/i3/wallpaper.png
 
 exec --no-startup-id dunst
-exec --no-startup-id picom
+exec --no-startup-id picom --backend xrender
 exec --no-startup-id redshift
 exec --no-startup-id dex -a -s /etc/xdg/autostart/:~/.config/autostart/
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
