@@ -97,6 +97,7 @@
 	fzf
 	lazygit
 	fd
+  brave
   ];
 
   environment.variables = {
